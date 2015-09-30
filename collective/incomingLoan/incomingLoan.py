@@ -122,11 +122,17 @@ class IIncomingLoan(form.Schema):
 
 
     # Internal coordination
-    loanRequest_internalCoordination_coordinator = schema.TextLine(
+    loanRequest_internalCoordination_coordinator = RelationList(
         title=_(u'Coordinator'),
+        default=[],
+        missing_value=[],
+        value_type=RelationChoice(
+            title=u"Related",
+            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+        ),
         required=False
     )
-    dexteritytextindexer.searchable('loanRequest_internalCoordination_coordinator')
+    form.widget('loanRequest_internalCoordination_coordinator', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
 
     loanRequest_internalCoordination_administrConcerned = ListField(title=_(u'Administr. concerned'),
         value_type=DictRow(title=_(u'Administr. concerned'), schema=IAdministrConcerned),
