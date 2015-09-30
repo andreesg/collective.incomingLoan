@@ -55,6 +55,12 @@ from .utils.vocabularies import *
 from .utils.interfaces import *
 from .utils.views import *
 
+from z3c.relationfield.schema import RelationChoice
+from z3c.relationfield.schema import RelationList
+from collective.object.utils.widgets import SimpleRelatedItemsFieldWidget, AjaxSingleSelectFieldWidget
+from collective.object.utils.source import ObjPathSourceBinder
+from plone.directives import dexterity, form
+
 # # # # # # # # # # # # #
 # # # # # # # # # # # # #
 # OutgoingLoan schema     #
@@ -90,11 +96,17 @@ class IIncomingLoan(form.Schema):
     )
     dexteritytextindexer.searchable('loanRequest_general_loanNumber')
 
-    loanRequest_general_lender = schema.TextLine(
+    loanRequest_general_lender = RelationList(
         title=_(u'Lender'),
+        default=[],
+        missing_value=[],
+        value_type=RelationChoice(
+            title=u"Related",
+            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+        ),
         required=False
     )
-    dexteritytextindexer.searchable('loanRequest_general_lender')
+    form.widget('loanRequest_general_lender', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
 
     loanRequest_general_contact = schema.TextLine(
         title=_(u'Contact'),
@@ -135,15 +147,21 @@ class IIncomingLoan(form.Schema):
     )
     dexteritytextindexer.searchable('loanRequest_requestDetails_reason')
 
-    loanRequest_requestDetails_exhibition = schema.TextLine(
+    loanRequest_requestDetails_exhibition = RelationList(
         title=_(u'Exhibition'),
+        default=[],
+        missing_value=[],
+        value_type=RelationChoice(
+            title=u"Related",
+            source=ObjPathSourceBinder(portal_type='Exhibition')
+        ),
         required=False
     )
-    dexteritytextindexer.searchable('loanRequest_requestDetails_exhibition')
+    form.widget('loanRequest_requestDetails_exhibition', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
 
     # Request letter
     loanRequest_requestLetter_date = schema.TextLine(
-        title=_(u'Date'),
+        title=_(u'label_date', default=u'Date'),
         required=False
     )
     dexteritytextindexer.searchable('loanRequest_requestLetter_date')
@@ -163,7 +181,7 @@ class IIncomingLoan(form.Schema):
 
     # Request confirmation
     loanRequest_requestConfirmation_date = schema.TextLine(
-        title=_(u'Date'),
+        title=_(u'Confirmed'),
         required=False
     )
     dexteritytextindexer.searchable('loanRequest_requestConfirmation_date')
@@ -196,11 +214,10 @@ class IIncomingLoan(form.Schema):
     model.fieldset('contract', label=_(u'Contract'), 
         fields=['contract_contractDetails_requestPeriodFrom',
                 'contract_contractDetails_to', 'contract_contractDetails_conditions',
-                'contract_contractDetails_notes', 'contract_contractLetter_template',
+                'contract_contractDetails_notes',
                 'contract_contractLetter_date', 'contract_contractLetter_digRef',
                 'contract_contractLetter_signedReturned', 'contract_contractLetter_signedReturnedDigRef',
-                'contract_conditionReport_template', 'contract_conditionReport_date',
-                'contract_conditionReport_digRef', 'contract_extension']
+                'contract_extension']
     )
 
     # Contract details
@@ -222,21 +239,15 @@ class IIncomingLoan(form.Schema):
     )
     dexteritytextindexer.searchable('contract_contractDetails_conditions')
 
-    contract_contractDetails_notes = ListField(title=_(u'Notes'),
-        value_type=DictRow(title=_(u'Notes'), schema=INotes),
+    contract_contractDetails_notes = ListField(title=_(u'label_notes', default=u'Notes'),
+        value_type=DictRow(title=_(u'label_notes', default=u'Notes'), schema=INotesOp),
         required=False)
     form.widget(contract_contractDetails_notes=DataGridFieldFactory)
     dexteritytextindexer.searchable('contract_contractDetails_notes')
 
     # Contract letter
-    contract_contractLetter_template = schema.TextLine(
-        title=_(u'Conditions'),
-        required=False
-    )
-    dexteritytextindexer.searchable('contract_contractDetails_conditions')
-
     contract_contractLetter_date = schema.TextLine(
-        title=_(u'Date'),
+        title=_(u'label_date', default=u'Date'),
         required=False
     )
     dexteritytextindexer.searchable('contract_contractLetter_date')
@@ -259,44 +270,12 @@ class IIncomingLoan(form.Schema):
     )
     dexteritytextindexer.searchable('contract_contractLetter_signedReturnedDigRef')
 
-    # Condition report
-    contract_conditionReport_template = schema.TextLine(
-        title=_(u'Template'),
-        required=False
-    )
-    dexteritytextindexer.searchable('contract_conditionReport_template')
-
-    contract_conditionReport_date = schema.TextLine(
-        title=_(u'Date'),
-        required=False
-    )
-    dexteritytextindexer.searchable('contract_conditionReport_date')
-
-    contract_conditionReport_digRef = schema.TextLine(
-        title=_(u'(Dig.) ref.'),
-        required=False
-    )
-    dexteritytextindexer.searchable('contract_conditionReport_digRef')
-
     # Extension
     contract_extension = ListField(title=_(u'Extension'),
         value_type=DictRow(title=_(u'Extension'), schema=IExtension),
         required=False)
     form.widget(contract_extension=BlockDataGridFieldFactory)
     dexteritytextindexer.searchable('contract_extension')
-
-    # # # # # # # # # #
-    # Correspondence  #
-    # # # # # # # # # #
-    model.fieldset('correspondence', label=_(u'Correspondence'), 
-        fields=['correspondence_otherCorrespondence']
-    )
-
-    correspondence_otherCorrespondence = ListField(title=_(u'Correspondence'),
-        value_type=DictRow(title=_(u'Correspondence'), schema=ICorrespondence),
-        required=False)
-    form.widget(correspondence_otherCorrespondence=BlockDataGridFieldFactory)
-    dexteritytextindexer.searchable('correspondence_otherCorrespondence')
 
     # # # # # # # # #
     # Transport     #
@@ -316,6 +295,33 @@ class IIncomingLoan(form.Schema):
         required=False)
     form.widget(transport_entryDetails=BlockDataGridFieldFactory)
     dexteritytextindexer.searchable('transport_entryDetails')
+
+    # # # # # # # # # #
+    # Correspondence  #
+    # # # # # # # # # #
+    model.fieldset('correspondence', label=_(u'Correspondence'), 
+        fields=['correspondence_otherCorrespondence']
+    )
+
+    correspondence_otherCorrespondence = ListField(title=_(u'Correspondence'),
+        value_type=DictRow(title=_(u'Correspondence'), schema=ICorrespondence),
+        required=False)
+    form.widget(correspondence_otherCorrespondence=BlockDataGridFieldFactory)
+    dexteritytextindexer.searchable('correspondence_otherCorrespondence')
+
+
+    # # # # # # # # # #
+    # Related loans   #
+    # # # # # # # # # #
+    model.fieldset('related_loans', label=_(u'Related loans'), 
+        fields=['relatedLoans_relatedLoans']
+    )
+
+    relatedLoans_relatedLoans = ListField(title=_(u'Related loans'),
+        value_type=DictRow(title=_(u'Related loans'), schema=IRelatedLoans),
+        required=False)
+    form.widget(relatedLoans_relatedLoans=BlockDataGridFieldFactory)
+    dexteritytextindexer.searchable('relatedLoans_relatedLoans')
 
 
 

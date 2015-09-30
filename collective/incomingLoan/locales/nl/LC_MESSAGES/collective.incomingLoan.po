@@ -23,6 +23,10 @@ msgid "Information about an object typically collected by museums"
 msgstr "Informatie over een object meestal verzameld door musea"
 
 #: ../incomingLoan.py
+msgid "Incoming loan"
+msgstr "Binnenkomende bruiklenen"
+
+#: ../incomingLoan.py
 msgid "Body"
 msgstr "Tekst"
 
@@ -1505,6 +1509,1591 @@ msgstr "Binnenkomstnummer"
 #: ../incomingLoan.py
 msgid "Lender"
 msgstr "Bruikleengever"
+
+
+#: ../incomingLoan.py
+msgid "Identification"
+msgstr "Identificatie"
+
+#: ../incomingLoan.py
+msgid "Institution name"
+msgstr "Instellingnaam"
+
+#: ../incomingLoan.py
+msgid "Administrative name"
+msgstr "Afdeling"
+
+#: ../incomingLoan.py
+msgid "Collection"
+msgstr "Collectie"
+
+#: ../incomingLoan.py
+msgid "Object number"
+msgstr "Objectnummer"
+
+#: ../incomingLoan.py
+msgid "Rec. type"
+msgstr "Rec. type"
+
+#: ../incomingLoan.py
+msgid "Part"
+msgstr "Onderdeel"
+
+#: ../incomingLoan.py
+msgid "Tot. Number"
+msgstr "Aantal"
+
+#: ../incomingLoan.py
+msgid "Copy number"
+msgstr "Serienummer"
+
+#: ../incomingLoan.py
+msgid "Edition"
+msgstr "Oplage"
+
+#: ../incomingLoan.py
+msgid "Distinguish features"
+msgstr "Ondersch. kenmerken"
+
+#: ../incomingLoan.py
+msgid "Object Category"
+msgstr "Objectcategorie"
+
+#: ../incomingLoan.py
+msgid "Object name"
+msgstr "Objectnaam"
+
+#: ../incomingLoan.py
+msgid "Other name"
+msgstr "Ander benaming"
+
+#: ../incomingLoan.py
+msgid "Physical Characteristics"
+msgstr "Fysieke kenmerken"
+
+#: ../incomingLoan.py
+msgid "Physical Description"
+msgstr "Fysieke beschrijving"
+
+#: ../incomingLoan.py
+msgid "Keywords"
+msgstr "Trefwoorden"
+
+#: ../incomingLoan.py
+msgid "Part"
+msgstr "Onderdeel"
+
+#: ../incomingLoan.py
+msgid "Aspect"
+msgstr "Aspect"
+
+#: ../incomingLoan.py
+msgid "Keyword"
+msgstr "Trefwoord"
+
+#: ../incomingLoan.py
+msgid "Notes"
+msgstr "Bijzonderheden"
+
+#: ../incomingLoan.py
+msgid "Techniques"
+msgstr "Technieken"
+
+#: ../incomingLoan.py
+msgid "Technique"
+msgstr "Techniek"
+
+#: ../incomingLoan.py
+msgid "Materials"
+msgstr "Materialen"
+
+#: ../incomingLoan.py
+msgid "Material"
+msgstr "Materiaal"
+
+#: ../incomingLoan.py
+msgid "Dimensions"
+msgstr "Afmetingen"
+
+#: ../incomingLoan.py
+msgid "Dimention"
+msgstr "Afmeting"
+
+#: ../incomingLoan.py
+msgid "Value"
+msgstr "Waarde"
+
+#: ../incomingLoan.py
+msgid "Unit"
+msgstr "Eenh"
+
+#: ../incomingLoan.py
+msgid "Precision"
+msgstr "Precisie"
+
+#: ../incomingLoan.py
+msgid "Dimensions (free text)"
+msgstr "Afmeting (vrije tekst)"
+
+#: ../incomingLoan.py
+msgid "Frame"
+msgstr "Omlijsting"
+
+#: ../incomingLoan.py
+msgid "Detail"
+msgstr "Bijzonderheden"
+
+#: ../incomingLoan.py
+msgid "Production & Dating"
+msgstr "Vervaardiging & Datering"
+
+#: ../incomingLoan.py
+msgid "Creator"
+msgstr "Vervaardiger"
+
+#: ../incomingLoan.py
+msgid "Maker"
+msgstr "Vervaardiger"
+
+#: ../incomingLoan.py
+msgid "Qualifier"
+msgstr "Kwalificatie"
+
+#: ../incomingLoan.py
+msgid "Role"
+msgstr "Rol"
+
+#: ../incomingLoan.py
+msgid "Place"
+msgstr "Plaats"
+
+#: ../incomingLoan.py
+msgid "School / style"
+msgstr "School / stijl"
+
+#: ../incomingLoan.py
+msgid "Production notes"
+msgstr "Bijzonderheden"
+
+#: ../incomingLoan.py
+msgid "Production reason"
+msgstr "Reden vervaardiging"
+
+#: ../incomingLoan.py
+msgid "Dating"
+msgstr "Datering"
+
+#: ../incomingLoan.py
+msgid "Period"
+msgstr "Periode"
+
+#: ../incomingLoan.py
+msgid "Date (early)"
+msgstr "Datering van"
+
+#: ../incomingLoan.py
+msgid "Precision"
+msgstr "Precisie"
+
+#: ../incomingLoan.py
+msgid "Date (late)"
+msgstr "Tot"
+
+#
+# Condition & Conservation
+#
+
+#: ../incomingLoan.py
+msgid "Condition & Conservation"
+msgstr "Toestand & Conservering"
+
+#: ../incomingLoan.py
+msgid "Conservation treatment"
+msgstr "Conserveringsprioriteit"
+
+#: ../incomingLoan.py
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: ../incomingLoan.py
+msgid "Next condition check"
+msgstr "Volgende toets en controle"
+
+#: ../incomingLoan.py
+msgid "Date"
+msgstr "Datum"
+
+#: ../incomingLoan.py
+msgid "Completeness"
+msgstr "Compleetheid"
+
+#: ../incomingLoan.py
+msgid "Checked by"
+msgstr "Controleur"
+
+#: ../incomingLoan.py
+msgid "Condition"
+msgstr "Toestand"
+
+#: ../incomingLoan.py
+msgid "Condition"
+msgstr "Toestand"
+
+#: ../incomingLoan.py
+msgid "Enviromental condition"
+msgstr "Bewaarvorm"
+
+#: ../incomingLoan.py
+msgid "Preservation form"
+msgstr "Bewaarvorm"
+
+#: ../incomingLoan.py
+msgid "Conservation request"
+msgstr "Conserveringverzoeken"
+
+#: ../incomingLoan.py
+msgid "Treatment"
+msgstr "Behandeling"
+
+#: ../incomingLoan.py
+msgid "Requester"
+msgstr "Aanvrager"
+
+#: ../incomingLoan.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../incomingLoan.py
+msgid "Status"
+msgstr "Status"
+
+#: ../incomingLoan.py
+msgid "low"
+msgstr "laag"
+
+#: ../incomingLoan.py
+msgid "medium"
+msgstr "normal"
+
+#: ../incomingLoan.py
+msgid "high"
+msgstr "hoog"
+
+#: ../incomingLoan.py
+msgid "urgent"
+msgstr "urgent"
+
+#
+# Inscriptions and markings
+#
+
+#: ../incomingLoan.py
+msgid "Inscriptions and markings"
+msgstr "Opschrijven en merken"
+
+#: ../incomingLoan.py
+msgid "Type"
+msgstr "Soort"
+
+#: ../incomingLoan.py
+msgid "Position"
+msgstr "Positie"
+
+#: ../incomingLoan.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../incomingLoan.py
+msgid "Date"
+msgstr "Datum"
+
+#: ../incomingLoan.py
+msgid "Role"
+msgstr "Rol"
+
+#: ../incomingLoan.py
+msgid "Content"
+msgstr "Inhoud"
+
+#: ../incomingLoan.py
+msgid "Description"
+msgstr "Beschrijving"
+
+#: ../incomingLoan.py
+msgid "Interpretation"
+msgstr "Interpretatie"
+
+#: ../incomingLoan.py
+msgid "Language"
+msgstr "Taal"
+
+#: ../incomingLoan.py
+msgid "Notes"
+msgstr "Bijzonderheden"
+
+#
+# Value & Insurance
+#
+
+#: ../incomingLoan.py
+msgid "Value & Insurance"
+msgstr "Waarde"
+
+#: ../incomingLoan.py
+msgid "Valuation"
+msgstr "Waardebepaling"
+
+#: ../incomingLoan.py
+msgid "Value"
+msgstr "Waarde"
+
+#: ../incomingLoan.py
+msgid "Curr."
+msgstr "Val."
+
+#: ../incomingLoan.py
+msgid "Valuer"
+msgstr "Taxateur"
+
+#: ../incomingLoan.py
+msgid "Insurance"
+msgstr "Verzekering"
+
+#: ../incomingLoan.py
+msgid "Commercial"
+msgstr "commercieel"
+
+#: ../incomingLoan.py
+msgid "Indemnity"
+msgstr "indemniteit"
+
+#: ../incomingLoan.py
+msgid "Policy number"
+msgstr "Polisnummer"
+
+#: ../incomingLoan.py
+msgid "Insurance company"
+msgstr "Verzekeringsmaatschappij"
+
+#: ../incomingLoan.py
+msgid "Confirmation date"
+msgstr "Bevestigingsdatum"
+
+#: ../incomingLoan.py
+msgid "Renewal date"
+msgstr "Verloopdatum"
+
+#: ../incomingLoan.py
+msgid "Reference"
+msgstr "Referentie"
+
+#: ../incomingLoan.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+#
+# Acquisition
+#
+
+#: ../incomingLoan.py
+msgid "Acquisition"
+msgstr "Verwerving"
+
+#: ../incomingLoan.py
+msgid "Accession"
+msgstr "Inschrijving"
+
+#: ../incomingLoan.py
+msgid "Accession date"
+msgstr "Inschrijvingsdatum"
+
+#: ../incomingLoan.py
+msgid "Acquisition"
+msgstr "Verwerving"
+
+#: ../incomingLoan.py
+msgid "Acquisition number"
+msgstr "Verwervingsnummer"
+
+#: ../incomingLoan.py
+msgid "Acquisition number"
+msgstr "Verwervingsnummer"
+
+#: ../incomingLoan.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../incomingLoan.py
+msgid "Rec.no."
+msgstr "Rec.nr."
+
+#: ../incomingLoan.py
+msgid "Lot no."
+msgstr "Lotnr."
+
+#: ../incomingLoan.py
+msgid "From"
+msgstr "Van"
+
+#: ../incomingLoan.py
+msgid "Auction"
+msgstr "Veiling"
+
+#: ../incomingLoan.py
+msgid "Place"
+msgstr "Plaats"
+
+#: ../incomingLoan.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../incomingLoan.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+#: ../incomingLoan.py
+msgid "Authorization"
+msgstr "Autorisatie"
+
+#: ../incomingLoan.py
+msgid "Authorizer"
+msgstr "Autorisator"
+
+#: ../incomingLoan.py
+msgid "Costs"
+msgstr "Kosten"
+
+#: ../incomingLoan.py
+msgid "Offer price"
+msgstr "Vraagprijs"
+
+#: ../incomingLoan.py
+msgid "Curr."
+msgstr "Valuta"
+
+#: ../incomingLoan.py
+msgid "Purchase price"
+msgstr "Aankoopprijs"
+
+#: ../incomingLoan.py
+msgid "Funding"
+msgstr "Financiering"
+
+#: ../incomingLoan.py
+msgid "Amount"
+msgstr "Bedrag"
+
+#: ../incomingLoan.py
+msgid "Source"
+msgstr "Bron"
+
+#: ../incomingLoan.py
+msgid "Provisos"
+msgstr "Bepalingen"
+
+#: ../incomingLoan.py
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: ../incomingLoan.py
+msgid "Reference"
+msgstr "Referentie"
+
+#
+# Disposal
+#
+
+#: ../incomingLoan.py
+msgid "Disposal"
+msgstr "Afstoting"
+
+#: ../incomingLoan.py
+msgid "Deaccession"
+msgstr "Uitschrijving"
+
+#: ../incomingLoan.py
+msgid "Deaccession date"
+msgstr "Uitschrijvingsdatum"
+
+#: ../incomingLoan.py
+msgid "New object number"
+msgstr "Nieuw objectnummer"
+
+#: ../incomingLoan.py
+msgid "Disposal"
+msgstr "Afstoting"
+
+#: ../incomingLoan.py
+msgid "Disposal number"
+msgstr "Afstotingsnummer"
+
+#: ../incomingLoan.py
+msgid "Proposed recipient"
+msgstr "Aspirant-ontvanger"
+
+#: ../incomingLoan.py
+msgid "Recipient"
+msgstr "Ontvanger"
+
+#: ../incomingLoan.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../incomingLoan.py
+msgid "Provisos"
+msgstr "Voorwaarden"
+
+#: ../incomingLoan.py
+msgid "Finance"
+msgstr "Financiën"
+
+#: ../incomingLoan.py
+msgid "Disposal price"
+msgstr "Verkoopprijs"
+
+#
+# Ownership history
+#
+
+#: ../incomingLoan.py
+msgid "Ownership history"
+msgstr "Eigendomsgeschiedenis"
+
+#: ../incomingLoan.py
+msgid "Ownership"
+msgstr "Eigendom"
+
+#: ../incomingLoan.py
+msgid "Current Owner"
+msgstr "Huidige eigenaar"
+
+#: ../incomingLoan.py
+msgid "History"
+msgstr "Geschiedenis"
+
+#: ../incomingLoan.py
+msgid "Owner"
+msgstr "Eigenaar"
+
+#: ../incomingLoan.py
+msgid "label_from_vanaf"
+msgstr "Vanaf"
+
+#: ../incomingLoan.py
+msgid "Until"
+msgstr "Tot"
+
+#: ../incomingLoan.py
+msgid "Exchange method"
+msgstr "Verwervingsmethode"
+
+#: ../incomingLoan.py
+msgid "Acquired from"
+msgstr "Verworven van"
+
+#: ../incomingLoan.py
+msgid "Auction"
+msgstr "Veiling"
+
+#: ../incomingLoan.py
+msgid "Price"
+msgstr "Prijs"
+
+#: ../incomingLoan.py
+msgid "Ownership category"
+msgstr "Eigendomscategorie"
+
+#: ../incomingLoan.py
+msgid "Access"
+msgstr "Toegankelijkheid"
+
+#
+# Location
+#
+
+#: ../incomingLoan.py
+msgid "Location"
+msgstr "Standplaats"
+
+#: ../incomingLoan.py
+msgid "Normal location"
+msgstr "Vaste standplaats"
+
+#: ../incomingLoan.py
+msgid "Current location"
+msgstr "Huidige locatie"
+
+#: ../incomingLoan.py
+msgid "Start date"
+msgstr "Begindatum"
+
+#: ../incomingLoan.py
+msgid "End date"
+msgstr "Einddatum"
+
+#: ../incomingLoan.py
+msgid "Location type"
+msgstr "Soort standplaats"
+
+#: ../incomingLoan.py
+msgid "Location"
+msgstr "Standplaats"
+
+#: ../incomingLoan.py
+msgid "Fitness"
+msgstr "Geschiktheid"
+
+#: ../incomingLoan.py
+msgid "Location checks"
+msgstr "Standplaatscontroles"
+
+#
+# Notes
+#
+
+#: ../incomingLoan.py
+msgid "Free Fields"
+msgstr "Vrij Velden"
+
+#: ../incomingLoan.py
+msgid "Confidential"
+msgstr "Vertrouwelijk"
+
+#
+# Labels
+#
+
+#: ../incomingLoan.py
+msgid "Labels"
+msgstr "Etiketten"
+
+# Identification
+
+#: ../incomingLoan.py
+msgid "Translated title"
+msgstr "Vertaalde titel"
+
+#: ../incomingLoan.py
+msgid "Describer"
+msgstr "Beschrijver"
+
+#: ../incomingLoan.py
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: ../incomingLoan.py
+msgid "Taxonomy rank"
+msgstr "Taxonomie rang"
+
+#: ../incomingLoan.py
+msgid "Scient. name"
+msgstr "Wet. naam"
+
+#: ../incomingLoan.py
+msgid "Common name"
+msgstr "Populaire naam"
+
+#: ../incomingLoan.py
+msgid "Determiner"
+msgstr "Determinator"
+
+#: ../incomingLoan.py
+msgid "Object status"
+msgstr "Objectstatus"
+
+#: ../incomingLoan.py
+msgid "Title and description"
+msgstr "Titel en beschrijving"
+
+
+#: ../incomingLoan.py
+msgid "Title and description"
+msgstr "Titel en beschrijving"
+
+#
+# Iconography
+#
+
+#: ../incomingLoan.py
+msgid "General theme"
+msgstr "Hoofdmotief algemeen"
+
+#: ../incomingLoan.py
+msgid "Specific theme"
+msgstr "Hoofdmotief specifiek"
+
+#: ../incomingLoan.py
+msgid "Classification theme"
+msgstr "Classificatieschema"
+
+#: ../incomingLoan.py
+msgid "Code"
+msgstr "Code"
+
+#: ../incomingLoan.py
+msgid "General search criteria"
+msgstr "Algemene onderwerpsontsluiting"
+
+#: ../incomingLoan.py
+msgid "Content description"
+msgstr "Inhoudsbeschrijving"
+
+#: ../incomingLoan.py
+msgid "Content person/institution"
+msgstr "Afgebeelde persoon/instelling"
+
+#: ../incomingLoan.py
+msgid "Name type"
+msgstr "Soort naam"
+
+#: ../incomingLoan.py
+msgid "Content subject"
+msgstr "Afgebeeld onderwerp"
+
+#: ../incomingLoan.py
+msgid "Subject type"
+msgstr "Soort onderwerp"
+
+#: ../incomingLoan.py
+msgid "Subject"
+msgstr "Naam"
+
+#: ../incomingLoan.py
+msgid "Taxonomic rank"
+msgstr "Taxonomische rang"
+
+#: ../incomingLoan.py
+msgid "Scientific name"
+msgstr "Wet. Naam"
+
+#: ../incomingLoan.py
+msgid "Proper name"
+msgstr "Eigennaam"
+
+#: ../incomingLoan.py
+msgid "Identifier"
+msgstr "Identifier"
+
+#: ../incomingLoan.py
+msgid "Content period/date"
+msgstr "Content period/date"
+
+#: ../incomingLoan.py
+msgid "Iconography source"
+msgstr "Iconografisch bron"
+
+#: ../incomingLoan.py
+msgid "Source general"
+msgstr "Bron algemeen"
+
+#: ../incomingLoan.py
+msgid "Source specific"
+msgstr "Bron specifiek"
+
+#: ../incomingLoan.py
+msgid "Source object number"
+msgstr "Bron objectnummer"
+
+#: ../incomingLoan.py
+msgid "Iconography"
+msgstr "Iconografie"
+
+#: ../incomingLoan.py
+msgid "Content period/date"
+msgstr "Afgebeelde periode/datum"
+
+#
+# Inscriptions
+#
+
+#: ../incomingLoan.py
+msgid "Script"
+msgstr "Schrijt"
+
+#: ../incomingLoan.py
+msgid "Transliteration"
+msgstr "Transliteratie"
+
+
+#
+# Associations
+#
+
+#: ../incomingLoan.py
+msgid "Associated person/institution"
+msgstr "Geassocieerde persoon/instelling"
+
+#: ../incomingLoan.py
+msgid "Association"
+msgstr "Associatie"
+
+#: ../incomingLoan.py
+msgid "Associated subject"
+msgstr "Geassocieerd onderwerp"
+
+#: ../incomingLoan.py
+msgid "Associated period"
+msgstr "Geassocieerde periode"
+
+#: ../incomingLoan.py
+msgid "Associations"
+msgstr "Associaties"
+
+#
+# Numbers/relationships
+#
+
+#: ../incomingLoan.py
+msgid "Numbers/relationships"
+msgstr "Nummers/relaties"
+
+#: ../incomingLoan.py
+msgid "Numbers"
+msgstr "Nummers"
+
+#: ../incomingLoan.py
+msgid "Institution"
+msgstr "Instelling"
+
+#: ../incomingLoan.py
+msgid "Number"
+msgstr "Nummer"
+
+#: ../incomingLoan.py
+msgid "Relationships with other objects"
+msgstr "Relaties met andere objecten"
+
+#: ../incomingLoan.py
+msgid "Part of"
+msgstr "Is deel van"
+
+#: ../incomingLoan.py
+msgid "Parts"
+msgstr "Heeft als deel"
+
+#: ../incomingLoan.py
+msgid "Related object"
+msgstr "Gerelateerd object"
+
+#: ../incomingLoan.py
+msgid "Digital references"
+msgstr "Digitale referenties"
+
+#: ../incomingLoan.py
+msgid "Title"
+msgstr "Titel"
+
+#: ../incomingLoan.py
+msgid "Page mark"
+msgstr "Pagina-aanduiding"
+
+#: ../incomingLoan.py
+msgid "Author"
+msgstr "Auteur"
+
+#: ../incomingLoan.py
+msgid "Shelf mark"
+msgstr "Signatuur"
+
+#
+# Documentation (free) / archive
+#
+
+#: ../incomingLoan.py
+msgid "Documentation (free) / archive"
+msgstr "Documentatie (vrij) / archief"
+
+#: ../incomingLoan.py
+msgid "Documentation (free text)"
+msgstr "Documentatie (vrij tekst)"
+
+#: ../incomingLoan.py
+msgid "Archive"
+msgstr "Archief"
+
+#: ../incomingLoan.py
+msgid "Archive number"
+msgstr "Archiefnummer"
+
+
+#
+# Reproductions
+#
+
+#: ../incomingLoan.py
+msgid "Reproductions"
+msgstr "Reproducties"
+
+#: ../incomingLoan.py
+msgid "Reproduction"
+msgstr "Reproductie"
+
+#: ../incomingLoan.py
+msgid "Reference"
+msgstr "Referentie"
+
+#: ../incomingLoan.py
+msgid "Format"
+msgstr "Formaat"
+
+#: ../incomingLoan.py
+msgid "Identifier (URL)"
+msgstr "Identifier (URL)"
+
+#
+# Recommendations/requirements
+#
+
+#: ../incomingLoan.py
+msgid "Recommendations/requirements"
+msgstr "Aanbevelingen / vereisten"
+
+#: ../incomingLoan.py
+msgid "Recommendations"
+msgstr "Aanbevelingen"
+
+#: ../incomingLoan.py
+msgid "Display"
+msgstr "Tentoonstelling"
+
+#: ../incomingLoan.py
+msgid "Enviroment"
+msgstr "Omgeving"
+
+#: ../incomingLoan.py
+msgid "Handling"
+msgstr "Behandeling"
+
+#: ../incomingLoan.py
+msgid "Packing"
+msgstr "Verpakking"
+
+#: ../incomingLoan.py
+msgid "Security"
+msgstr "Veiligheid"
+
+#: ../incomingLoan.py
+msgid "Security"
+msgstr "Veiligheid"
+
+#: ../incomingLoan.py
+msgid "Storage"
+msgstr "Berging"
+
+#: ../incomingLoan.py
+msgid "Legal / license requirements"
+msgstr "Wettelijke eisen / vergunningen"
+
+#: ../incomingLoan.py
+msgid "Requirements"
+msgstr "Eisen"
+
+#: ../incomingLoan.py
+msgid "Requirements held"
+msgstr "Vereisten in Bezit"
+
+#: ../incomingLoan.py
+msgid "Current From"
+msgstr "Geldig van"
+
+#
+# Field collection
+#
+
+#: ../incomingLoan.py
+msgid "Field Collection"
+msgstr "Vondstomstandigheden"
+
+#: ../incomingLoan.py
+msgid "Field coll. number"
+msgstr "Vondstnummer"
+
+#: ../incomingLoan.py
+msgid "Collector"
+msgstr "Vinder"
+
+#: ../incomingLoan.py
+msgid "Event"
+msgstr "Gebeurtenis"
+
+#: ../incomingLoan.py
+msgid "Date (early)"
+msgstr "Begindatum"
+
+
+#: ../incomingLoan.py
+msgid "Date (late)"
+msgstr "Einddatum"
+
+#: ../incomingLoan.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../incomingLoan.py
+msgid "Place"
+msgstr "Vindplaats"
+
+#: ../incomingLoan.py
+msgid "Place code"
+msgstr "Code vindplaats"
+
+#: ../incomingLoan.py
+msgid "Place feature"
+msgstr "Kenmerk vindplaats"
+
+#: ../incomingLoan.py
+msgid "Co-ordinates field collection place"
+msgstr "Coördnaten vindplaats"
+
+#: ../incomingLoan.py
+msgid "Grid type"
+msgstr "Coördinatenstelsel"
+
+#: ../incomingLoan.py
+msgid "X co-ordinate"
+msgstr "X-coördnaat"
+
+#: ../incomingLoan.py
+msgid "Addition"
+msgstr "Toevoeging"
+
+#: ../incomingLoan.py
+msgid "Y co-ordinate"
+msgstr "Y-coördnaat"
+
+#: ../incomingLoan.py
+msgid "Habitat and stratigraphy"
+msgstr "Milieu en stratigrafie"
+
+#: ../incomingLoan.py
+msgid "Habitat"
+msgstr "Landschap/milieu"
+
+#: ../incomingLoan.py
+msgid "Stratigraphy"
+msgstr "Stratigrafie"
+
+#: ../incomingLoan.py
+msgid "Strat. type"
+msgstr "Soort strat."
+
+#
+# OutgoingLoans
+#
+
+#: ../incomingLoan.py
+msgid "OutgoingLoans"
+msgstr "Tentoonstellingen"
+
+#: ../incomingLoan.py
+msgid "OutgoingLoan"
+msgstr "Tentoonstelling"
+
+#: ../incomingLoan.py
+msgid "OutgoingLoan name"
+msgstr "Tentoonstellingsnaam"
+
+#: ../incomingLoan.py
+msgid "to"
+msgstr "t/m"
+
+#: ../incomingLoan.py
+msgid "Venue"
+msgstr "Locatie"
+
+#: ../incomingLoan.py
+msgid "Cat. no. object"
+msgstr "Cat.nr. object"
+
+#
+# Loans
+#
+
+#: ../incomingLoan.py
+msgid "Loans"
+msgstr "Bruiklenen"
+
+#: ../incomingLoan.py
+msgid "Incoming loans"
+msgstr "Inkomende bruiklenen"
+
+#: ../incomingLoan.py
+msgid "Outgoing loans"
+msgstr "Uitgaande bruiklenen"
+
+#: ../incomingLoan.py
+msgid "Loan number"
+msgstr "Bruikleennummer"
+
+#: ../incomingLoan.py
+msgid "Lender"
+msgstr "Bruikleengever"
+
+#: ../incomingLoan.py
+msgid "Requester"
+msgstr "Aanvrager"
+
+#: ../incomingLoan.py
+msgid "Request reason"
+msgstr "Reden aanvraag"
+
+#: ../incomingLoan.py
+msgid "Request period"
+msgstr "Aaanvraagperiode"
+
+#: ../incomingLoan.py
+msgid "Contract period"
+msgstr "Contractperiode"
+
+#: ../incomingLoan.py
+msgid "Contact"
+msgstr "Contactpersoon"
+
+#
+# OutgoingLoans details
+#
+
+#: ../incomingLoan.py
+msgid "OutgoingLoan"
+msgstr "Tentoonstelling"
+
+#: ../incomingLoan.py
+msgid "Alt. Title"
+msgstr "Alt. Titel"
+
+#: ../incomingLoan.py
+msgid "Organizing institutions"
+msgstr "Organiserende instelling"
+
+#: ../incomingLoan.py
+msgid "Name"
+msgstr "Naam"
+
+#: ../incomingLoan.py
+msgid "Address"
+msgstr "Adres"
+
+#: ../incomingLoan.py
+msgid "Country"
+msgstr "Land"
+
+#: ../incomingLoan.py
+msgid "Telephone"
+msgstr "Telefoon"
+
+#: ../incomingLoan.py
+msgid "OutgoingLoans details"
+msgstr "Tentoonstelling"
+
+
+#: ../incomingLoan.py
+msgid "label_event_start"
+msgstr "Aanvang"
+
+#: ../incomingLoan.py
+msgid "label_event_end"
+msgstr "Einde"
+
+#: ../incomingLoan.py
+msgid "Article"
+msgstr "Lidword"
+
+#: ../incomingLoan.py
+msgid "Linked Objects"
+msgstr "Gekoppelde objecten"
+
+#: ../incomingLoan.py
+msgid "Itinerary"
+msgstr "Agenda"
+
+#
+# Outgoing loans
+#
+
+#: ../incomingLoan.py
+msgid "OutgoingLoan"
+msgstr "Uitgaande bruiklenen"
+
+#: ../incomingLoan.py
+msgid "Loan Request"
+msgstr "Aanvraag"
+
+#: ../incomingLoan.py
+msgid "General"
+msgstr "Algemeen"
+
+#: ../incomingLoan.py
+msgid "Loan number"
+msgstr "Bruikleennummer"
+
+#: ../incomingLoan.py
+msgid "Internal coordination"
+msgstr "Interne coördinatie"
+
+#: ../incomingLoan.py
+msgid "Coordinator"
+msgstr "Coordinator"
+
+#: ../incomingLoan.py
+msgid "Administr. concerned"
+msgstr "Betrokken afdeling"
+
+#: ../incomingLoan.py
+msgid "Request details"
+msgstr "Aanvraagdetails"
+
+#: ../incomingLoan.py
+msgid "Period from"
+msgstr "Periode vanaf"
+
+#: ../incomingLoan.py
+msgid "to"
+msgstr "Tot"
+
+
+#: ../incomingLoan.py
+msgid "exhibition"
+msgstr "tentoonstelling"
+
+#: ../incomingLoan.py
+msgid "long term loan"
+msgstr "langdurig buikleen"
+
+#: ../incomingLoan.py
+msgid "conservation/restoration"
+msgstr "conservering/restauratie"
+
+#: ../incomingLoan.py
+msgid "English"
+msgstr "Engels"
+
+#: ../incomingLoan.py
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: ../incomingLoan.py
+msgid "Exhibition"
+msgstr "Tentoonstelling"
+
+
+#: ../incomingLoan.py
+msgid "Request letter"
+msgstr "Aanvraagbrief"
+
+#: ../incomingLoan.py
+msgid "Date"
+msgstr "Vanaf"
+
+#: ../incomingLoan.py
+msgid "Request confirmation"
+msgstr "Aanvraagbevestiging"
+
+#: ../incomingLoan.py
+msgid "Template"
+msgstr "Sjabloon"
+
+#: ../incomingLoan.py
+msgid "Dig. ref."
+msgstr "(Dig.) ref."
+
+#: ../incomingLoan.py
+msgid "Objects"
+msgstr "Objecten"
+
+#: ../incomingLoan.py
+msgid "Loan title"
+msgstr "Buikleentitel"
+
+#: ../incomingLoan.py
+msgid "Loan title"
+msgstr "Buikleentitel"
+
+#: ../incomingLoan.py
+msgid "Authoriser (internal)"
+msgstr "Autorisator (intern)"
+
+#: ../incomingLoan.py
+msgid "Authoriser"
+msgstr "Autorisator"
+
+#: ../incomingLoan.py
+msgid "Authorisation date"
+msgstr "Autorisatiedatum"
+
+#: ../incomingLoan.py
+msgid "Authorisation date"
+msgstr "Autorisatiedatum"
+
+#: ../incomingLoan.py
+msgid "Authorisation date"
+msgstr "Autorisatiedatum"
+
+#: ../incomingLoan.py
+msgid "Review request"
+msgstr "Beoordelingsverzoek"
+
+#: ../incomingLoan.py
+msgid "Permission owner"
+msgstr "Toestemming eigenaar"
+
+#: ../incomingLoan.py
+msgid "Request template"
+msgstr "Sjabloon verzoek"
+
+#: ../incomingLoan.py
+msgid "Request template"
+msgstr "Sjabloon verzoek"
+
+
+#: ../incomingLoan.py
+msgid "Permission result"
+msgstr "Toestemming uitslag"
+
+#: ../incomingLoan.py
+msgid "Miscellaneous"
+msgstr "Overig"
+
+#: ../incomingLoan.py
+msgid "Insurance Value"
+msgstr "Verzekeringwaarde"
+
+#: ../incomingLoan.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+
+#: ../incomingLoan.py
+msgid "Currency"
+msgstr "Valuta"
+
+#: ../incomingLoan.py
+msgid "Object"
+msgstr "Object"
+
+
+#: ../incomingLoan.py
+msgid "German"
+msgstr "Duits"
+
+#: ../incomingLoan.py
+msgid "Contract"
+msgstr "Contract"
+
+#: ../incomingLoan.py
+msgid "Contract details"
+msgstr "Contractdetails"
+
+#: ../incomingLoan.py
+msgid "Request period from"
+msgstr "Contractperiode vanaf"
+
+#: ../incomingLoan.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+
+#: ../incomingLoan.py
+msgid "Contract letter"
+msgstr "Contractbrief"
+
+#: ../incomingLoan.py
+msgid "Signed & returned"
+msgstr "Getekend & retour"
+
+#: ../incomingLoan.py
+msgid "(Dig.) ref."
+msgstr "(Dig.) ref."
+
+#: ../incomingLoan.py
+msgid "Condition report"
+msgstr "Conditierapport"
+
+#: ../incomingLoan.py
+msgid "Extension"
+msgstr "Verlenging"
+
+#: ../incomingLoan.py
+msgid "Request"
+msgstr "Verzoek"
+
+#: ../incomingLoan.py
+msgid "New end date"
+msgstr "Nieuwe einddatum"
+
+#: ../incomingLoan.py
+msgid "Review"
+msgstr "Beoordeling"
+
+#: ../incomingLoan.py
+msgid "authorised"
+msgstr "goedgekeurd"
+
+#: ../incomingLoan.py
+msgid "Result"
+msgstr "Uitslag"
+
+
+#
+# Correspondence
+#
+
+#: ../incomingLoan.py
+msgid "Correspondence"
+msgstr "Correspondentie"
+
+#: ../incomingLoan.py
+msgid "Other correspondence"
+msgstr "Andere correspondentie"
+
+#: ../incomingLoan.py
+msgid "(Digital) Reference"
+msgstr "(Digitale) referentie"
+
+#: ../incomingLoan.py
+msgid "Destination"
+msgstr "Bestemming"
+
+#: ../incomingLoan.py
+msgid "Sender"
+msgstr "Afzender"
+
+#: ../incomingLoan.py
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: ../incomingLoan.py
+msgid "label_date"
+msgstr "Datum"
+
+
+#
+# Transport
+#
+
+#: ../incomingLoan.py
+msgid "Despatch details"
+msgstr "Verzendgegevens"
+
+#: ../incomingLoan.py
+msgid "Despatch number"
+msgstr "Verzendnummer"
+
+#: ../incomingLoan.py
+msgid "Entry details"
+msgstr "Binnenkomstgegevens"
+
+#: ../incomingLoan.py
+msgid "Entry number"
+msgstr "Binnenkomstnummer"
+
+
+
+#: ../incomingLoan.py
+msgid "under consideration"
+msgstr "in behandeling"
+
+#: ../incomingLoan.py
+msgid "under discussion"
+msgstr "advies aangevraagd"
+
+#: ../incomingLoan.py
+msgid "approved"
+msgstr "goedgekeurd"
+
+#: ../incomingLoan.py
+msgid "refused"
+msgstr "geweigerd"
+
+#: ../incomingLoan.py
+msgid "withdrawn"
+msgstr "ingetrokken"
+
+#: ../incomingLoan.py
+msgid "despatched"
+msgstr "transport"
+
+#: ../incomingLoan.py
+msgid "on loan"
+msgstr "uitgeleend"
+
+#: ../incomingLoan.py
+msgid "renewed"
+msgstr "verlengd"
+
+#: ../incomingLoan.py
+msgid "returned"
+msgstr "retour"
+
+
+#: ../incomingLoan.py
+msgid "Granted"
+msgstr "verleend"
+
+#: ../incomingLoan.py
+msgid "Refused"
+msgstr "geweigerd"
+
+#: ../incomingLoan.py
+msgid "label_notes"
+msgstr "Opmerkingen"
+
+#: ../incomingLoan.py
+msgid "Related loans"
+msgstr "Verwante bruiklenen"
+
+#: ../incomingLoan.py
+msgid "Relation type"
+msgstr "Soort relatie"
+
+
+#: ../incomingLoan.py
+msgid "Confirmed"
+msgstr "Bevestigd"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
