@@ -60,7 +60,6 @@ class IObjects(Interface):
     )
     form.widget('objectNumber', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
 
-    loanTitle = schema.TextLine(title=_(u'Loan title'), required=False)
     status = schema.Choice(
         vocabulary=status_vocabulary,
         title=_(u'Status'),
@@ -93,7 +92,7 @@ class IObjects(Interface):
         default=[]
     )
     form.widget('miscellaneous_currency', AjaxSingleSelectFieldWidget, vocabulary="collective.object.currency")
-    miscellaneous_notes = schema.Text(title=_(u'Notes'), required=False)
+    miscellaneous_notes = schema.Text(title=_(u'label_notes', default=u'Notes'), required=False)
 
 ## Contract
 class IExtension(Interface):
