@@ -108,11 +108,18 @@ class IIncomingLoan(form.Schema):
     )
     form.widget('loanRequest_general_lender', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
 
-    loanRequest_general_contact = schema.TextLine(
+    loanRequest_general_contact = RelationList(
         title=_(u'Contact'),
+        default=[],
+        missing_value=[],
+        value_type=RelationChoice(
+            title=u"Related",
+            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+        ),
         required=False
     )
-    dexteritytextindexer.searchable('loanRequest_general_contact')
+    form.widget('loanRequest_general_contact', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
+
 
     # Internal coordination
     loanRequest_internalCoordination_coordinator = schema.TextLine(
