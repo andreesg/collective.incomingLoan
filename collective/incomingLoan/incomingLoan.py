@@ -74,6 +74,11 @@ class IIncomingLoan(form.Schema):
         required=False
     )
 
+    priref = schema.TextLine(
+        title=_(u'priref'),
+        required=False
+    )
+
     # # # # # # # # # # #
     # Loan Request      # 
     # # # # # # # # # # #
@@ -156,7 +161,9 @@ class IIncomingLoan(form.Schema):
     loanRequest_requestDetails_reason = schema.Choice(
         vocabulary=reason_vocabulary,
         title=_(u'Reason'),
-        required=False
+        required=True,
+        missing_value=" ",
+        default="No value"
     )
     dexteritytextindexer.searchable('loanRequest_requestDetails_reason')
 
@@ -188,7 +195,9 @@ class IIncomingLoan(form.Schema):
     loanRequest_requestLetter_template = schema.Choice(
         vocabulary=template_vocabulary,
         title=_(u'Template'),
-        required=False
+        required=True,
+        missing_value=" ",
+        default="No value"
     )
     dexteritytextindexer.searchable('loanRequest_requestLetter_template')
 

@@ -63,7 +63,9 @@ class IObjects(Interface):
     status = schema.Choice(
         vocabulary=status_vocabulary,
         title=_(u'Status'),
-        required=False
+        required=True,
+        missing_value=" ",
+        default="No value"
     )
 
     date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
@@ -100,7 +102,9 @@ class IExtension(Interface):
     request_template = schema.Choice(
         vocabulary=template_vocabulary,
         title=_(u'Template'),
-        required=False
+        required=True,
+        missing_value=" ",
+        default="No value"
     )
 
     request_date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
@@ -110,7 +114,9 @@ class IExtension(Interface):
     review_status = schema.Choice(
         vocabulary=review_status_vocabulary,
         title=_(u'Status'),
-        required=False
+        required=True,
+        missing_value=" ",
+        default="No value"
     )
     review_newEndDate = schema.TextLine(title=_(u'New end date'), required=False)
     review_date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
