@@ -204,8 +204,9 @@ class IIncomingLoan(form.Schema):
 
     loanRequest_requestLetter_templateCheck = schema.Bool(
         title=_(u""),
-        missing_value=True,
-        default=True
+        missing_value=False,
+        default=False,
+        required=False
     )
     dexteritytextindexer.searchable('loanRequest_requestLetter_templateCheck')
 
@@ -218,7 +219,10 @@ class IIncomingLoan(form.Schema):
 
     loanRequest_requestConfirmation_datecheck = schema.Bool(
         title=_(u''),
-        required=False
+        required=False,
+        missing_value=False,
+        default=False,
+
     )
     dexteritytextindexer.searchable('loanRequest_requestConfirmation_datecheck')
 
