@@ -91,8 +91,9 @@ class IIncomingLoan(form.Schema):
                 'loanRequest_requestDetails_periodFrom', 'loanRequest_requestDetails_to',
                 'loanRequest_requestDetails_reason', 'loanRequest_requestDetails_exhibition',
                 'loanRequest_requestLetter_date', 'loanRequest_requestLetter_digRef',
+                'loanRequest_requestConfirmation_datecheck',
                 'loanRequest_requestLetter_template', 'loanRequest_requestConfirmation_date',
-                'loanRequest_requestConfirmation_digRef']
+                'loanRequest_requestConfirmation_digRef', 'loanRequest_requestLetter_templateCheck']
     )
 
     loanRequest_general_loanNumber = schema.TextLine(
@@ -201,12 +202,25 @@ class IIncomingLoan(form.Schema):
     )
     dexteritytextindexer.searchable('loanRequest_requestLetter_template')
 
+    loanRequest_requestLetter_templateCheck = schema.Bool(
+        title=_(u""),
+        missing_value=True,
+        default=True
+    )
+    dexteritytextindexer.searchable('loanRequest_requestLetter_templateCheck')
+
     # Request confirmation
     loanRequest_requestConfirmation_date = schema.TextLine(
         title=_(u'Confirmed'),
         required=False
     )
     dexteritytextindexer.searchable('loanRequest_requestConfirmation_date')
+
+    loanRequest_requestConfirmation_datecheck = schema.Bool(
+        title=_(u''),
+        required=False
+    )
+    dexteritytextindexer.searchable('loanRequest_requestConfirmation_datecheck')
 
     loanRequest_requestConfirmation_digRef = schema.TextLine(
         title=_(u'Dig. ref.'),
@@ -239,7 +253,7 @@ class IIncomingLoan(form.Schema):
                 'contract_contractDetails_notes',
                 'contract_contractLetter_date', 'contract_contractLetter_digRef',
                 'contract_contractLetter_signedReturned', 'contract_contractLetter_signedReturnedDigRef',
-                'contract_extension']
+                'contract_extension', 'contract_contractLetter_returned']
     )
 
     # Contract details
@@ -285,6 +299,14 @@ class IIncomingLoan(form.Schema):
         required=False
     )
     dexteritytextindexer.searchable('contract_contractLetter_signedReturned')
+
+    contract_contractLetter_returned = schema.Bool(
+        title=_(u''),
+        required=False,
+        missing_value=False,
+        default=False
+    )
+    dexteritytextindexer.searchable('contract_contractLetter_returned')
 
     contract_contractLetter_signedReturnedDigRef = schema.TextLine(
         title=_(u'(Dig.) ref.'),

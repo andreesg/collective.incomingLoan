@@ -41,6 +41,7 @@
 
         <div class="form-horizontal">
           <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_template/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_templateCheck/@@ploneform-render-widget"/>
 
           <div class="col-sm-12 col-md-6 col-lg-6 padding-right div-50">
             <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_date/@@ploneform-render-widget"/>
@@ -55,6 +56,7 @@
         <div class="form-horizontal">
           <div class="col-sm-12 col-md-6 col-lg-6 padding-right div-50">
             <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_date/@@ploneform-render-widget"/>
+            <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_datecheck/@@ploneform-render-widget"/>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 div-20-80 label-right">
             <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_digRef/@@ploneform-render-widget"/>
@@ -106,6 +108,7 @@
 
         <div class="form-horizontal">
           <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_template/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_templateCheck/@@ploneform-render-widget"/>
 
           <div class="col-sm-12 col-md-6 col-lg-6 padding-right div-50">
             <tal:widget tal:replace="structure widgets/loanRequest_requestLetter_date/@@ploneform-render-widget"/>
@@ -120,6 +123,7 @@
         <div class="form-horizontal">
           <div class="col-sm-12 col-md-6 col-lg-6 padding-right div-50">
             <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_date/@@ploneform-render-widget"/>
+            <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_datecheck/@@ploneform-render-widget"/>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 div-20-80 label-right">
             <tal:widget tal:replace="structure widgets/loanRequest_requestConfirmation_digRef/@@ploneform-render-widget"/>
@@ -175,6 +179,7 @@
           
           <div class="col-sm-12 col-md-6 col-lg-6 padding-right div-50">
             <tal:widget tal:replace="structure widgets/contract_contractLetter_signedReturned/@@ploneform-render-widget"/>
+            <tal:widget tal:replace="structure widgets/contract_contractLetter_returned/@@ploneform-render-widget"/>
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6 div-20-80 label-right">
@@ -182,7 +187,7 @@
           </div>
         </div>
 
-        <h2 class="page-header" i18n:translate="">Extension</h2>
+        <h2 class="page-header" i18n:translate="" style="clear:both;">Extension</h2>
 
         <div class="form-horizontal gridfield">
           <tal:widget tal:replace="structure widgets/contract_extension/@@ploneform-render-widget"/>
