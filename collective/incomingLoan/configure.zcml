@@ -89,4 +89,9 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <adapter for=".incomingLoan.IIncomingLoan"
+    provides=".incomingLoan.INameFromLoanNumber"
+    factory=".incomingLoan.NameFromLoanNumber"
+    />
+
 </configure>
