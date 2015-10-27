@@ -159,19 +159,6 @@ class ICorrespondence(Interface):
 class IDespatchDetails(Interface):
     despatchNumber = schema.TextLine(title=_(u'Despatch number'), required=False)
 
-class IEntryDetails(Interface):
-    entryNumber = RelationList(
-        title=_(u'Entry number'),
-        default=[],
-        missing_value=[],
-        value_type=RelationChoice(
-            title=u"Related",
-            source=ObjPathSourceBinder(portal_type='ObjectEntry')
-        ),
-        required=False
-    )
-    form.widget('entryNumber', SimpleRelatedItemsFieldWidget, vocabulary='collective.object.relateditems')
-
 
 class IRelatedLoans(Interface):
     loanNumber = RelationList(

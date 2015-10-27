@@ -215,8 +215,8 @@
     <div class="row no-padding">
         <h2 class="page-header" i18n:translate="">Entry details</h2>
 
-        <div class="form-horizontal gridfield">
-          <tal:widget tal:replace="structure widgets/transport_entryDetails/@@ploneform-render-widget"/>
+        <div class="form-horizontal">
+          <tal:widget tal:replace="structure widgets/transport_entrydetails/@@ploneform-render-widget"/>
         </div>
 
         <h2 class="page-header" i18n:translate="">Despatch details</h2>
