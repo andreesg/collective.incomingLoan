@@ -30,7 +30,7 @@ from z3c.form.browser.textlines import TextLinesFieldWidget
 #
 # plone.app.widgets dependencies
 #
-from plone.app.widgets.dx import DatetimeFieldWidget
+from plone.app.z3cform.widget import DatetimeFieldWidget
 
 #
 # DataGridFields dependencies
@@ -117,7 +117,7 @@ class IIncomingLoan(form.Schema):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -129,7 +129,7 @@ class IIncomingLoan(form.Schema):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -143,7 +143,7 @@ class IIncomingLoan(form.Schema):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -183,7 +183,7 @@ class IIncomingLoan(form.Schema):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='Exhibition')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -191,7 +191,7 @@ class IIncomingLoan(form.Schema):
 
     # Request letter
     loanRequest_requestLetter_date = schema.TextLine(
-        title=_(u'label_date', default=u'Date'),
+        title=_(u'Date', default=u'Date'),
         required=False
     )
     dexteritytextindexer.searchable('loanRequest_requestLetter_date')
@@ -212,7 +212,7 @@ class IIncomingLoan(form.Schema):
     dexteritytextindexer.searchable('loanRequest_requestLetter_template')
 
     loanRequest_requestLetter_templateCheck = schema.Bool(
-        title=_(u""),
+        title=_(u"Template check"),
         missing_value=False,
         default=False,
         required=False
@@ -227,7 +227,7 @@ class IIncomingLoan(form.Schema):
     dexteritytextindexer.searchable('loanRequest_requestConfirmation_date')
 
     loanRequest_requestConfirmation_datecheck = schema.Bool(
-        title=_(u''),
+        title=_(u'Template check'),
         required=False,
         missing_value=False,
         default=False,
@@ -265,8 +265,9 @@ class IIncomingLoan(form.Schema):
                 'contract_contractDetails_to', 'contract_contractDetails_conditions',
                 'contract_contractDetails_notes',
                 'contract_contractLetter_date', 'contract_contractLetter_digRef',
-                'contract_contractLetter_signedReturned', 'contract_contractLetter_signedReturnedDigRef',
-                'contract_extension', 'contract_contractLetter_returned']
+                'contract_contractLetter_signedReturned', 'contract_contractLetter_returned',
+                'contract_contractLetter_signedReturnedDigRef',
+                'contract_extension']
     )
 
     # Contract details
@@ -296,7 +297,7 @@ class IIncomingLoan(form.Schema):
 
     # Contract letter
     contract_contractLetter_date = schema.TextLine(
-        title=_(u'label_date', default=u'Date'),
+        title=_(u'Date', default=u'Date'),
         required=False
     )
     dexteritytextindexer.searchable('contract_contractLetter_date')
@@ -314,7 +315,7 @@ class IIncomingLoan(form.Schema):
     dexteritytextindexer.searchable('contract_contractLetter_signedReturned')
 
     contract_contractLetter_returned = schema.Bool(
-        title=_(u''),
+        title=_(u'Returned'),
         required=False,
         missing_value=False,
         default=False
@@ -353,7 +354,7 @@ class IIncomingLoan(form.Schema):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='ObjectEntry')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )

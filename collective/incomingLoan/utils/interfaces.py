@@ -37,7 +37,7 @@ class INotes(Interface):
     note = schema.TextLine(title=_(u'Notes'), required=False)
 
 class INotesOp(Interface):
-    note = schema.TextLine(title=_(u'label_notes', default=u'Notes'), required=False)
+    note = schema.TextLine(title=_(u'Notes', default=u'Notes'), required=False)
 
 class IDocumentationDocumentation(Interface):
     article = schema.TextLine(title=_(u'Article'), required=False)
@@ -54,7 +54,7 @@ class IObjects(Interface):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='Object')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -68,14 +68,14 @@ class IObjects(Interface):
         default="No value"
     )
 
-    date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
+    date = schema.TextLine(title=_(u'Date', default=u'Date'), required=False)
     authoriserInternal = RelationList(
         title=_(u'Authoriser'),
         default=[],
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -94,7 +94,7 @@ class IObjects(Interface):
         default=[]
     )
     form.widget('miscellaneous_currency', AjaxSingleSelectFieldWidget, vocabulary="collective.object.currency")
-    miscellaneous_notes = schema.Text(title=_(u'label_notes', default=u'Notes'), required=False)
+    miscellaneous_notes = schema.Text(title=_(u'Notes', default=u'Notes'), required=False)
 
 ## Contract
 class IExtension(Interface):
@@ -107,7 +107,7 @@ class IExtension(Interface):
         default="No value"
     )
 
-    request_date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
+    request_date = schema.TextLine(title=_(u'Date', default=u'Date'), required=False)
     request_digRef = schema.TextLine(title=_(u'(Dig.) ref.'), required=False)
 
     # Review
@@ -119,14 +119,14 @@ class IExtension(Interface):
         default="No value"
     )
     review_newEndDate = schema.TextLine(title=_(u'New end date'), required=False)
-    review_date = schema.TextLine(title=_(u'label_date', default=u'Date'), required=False)
+    review_date = schema.TextLine(title=_(u'Date', default=u'Date'), required=False)
     review_digRef = schema.TextLine(title=_(u'(Dig.) ref.'), required=False)
     review_notes = schema.Text(title=_(u'Notes'), required=False)
 
 ## Correspondence
 class ICorrespondence(Interface):
 	digitalReference = schema.TextLine(title=_(u'(Digital) Reference'), required=False)
-	date = schema.TextLine(title=_(u'label_date'), required=False)
+	date = schema.TextLine(title=_(u'Date'), required=False)
 	sender = schema.TextLine(title=_(u'Sender'), required=False)
 	destination = schema.TextLine(title=_(u'Destination'), required=False)
 	subject = schema.TextLine(title=_(u'Subject'), required=False)
@@ -141,7 +141,7 @@ class IEntryDetails(Interface):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='ObjectEntry')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -151,7 +151,7 @@ class IEntryDetails(Interface):
 ## Correspondence
 class ICorrespondence(Interface):
     digitalReference = schema.TextLine(title=_(u'(Digital) Reference'), required=False)
-    date = schema.TextLine(title=_(u'label_date'), required=False)
+    date = schema.TextLine(title=_(u'Date'), required=False)
     sender = schema.TextLine(title=_(u'Sender'), required=False)
     destination = schema.TextLine(title=_(u'Destination'), required=False)
     subject = schema.TextLine(title=_(u'Subject'), required=False)
@@ -167,7 +167,7 @@ class IRelatedLoans(Interface):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='OutgoingLoan')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
